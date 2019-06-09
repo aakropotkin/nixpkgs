@@ -1,4 +1,12 @@
 MD_TARGETS=$(addsuffix .xml, $(basename $(wildcard ./*.md ./**/*.md)))
+MD_TARGETS+=$(addsuffix .xml, $(basename $(shell \
+			cat ./languages-frameworks/file-remaps.json \
+			| jq -r 'to_entries | .[] | "./language-frameworks/" + .value' \
+			| sed -e 's:/\./:/:g' -e 's:\./language-frameworks/\.\./::g')))
+
+.PHONY: seeMDs
+seeMDs:
+	@echo ${MD_TARGETS}
 
 .PHONY: all
 all: validate format out/html/index.html out/epub/manual.epub
