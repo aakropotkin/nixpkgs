@@ -1,0 +1,9 @@
+{
+  "haskell.section.md": "../../pkgs/development/haskell-modules/README.md",
+  "android.section.md": "../../pkgs/development/androidndk-pkgs/README.md",
+  "emscripten.section.md": "../../pkgs/development/em-modules/README.md",
+  "idris.section.md": "../../pkgs/development/idris-modules/README.md",
+  "node.section.md": "../../pkgs/development/node-packages/README.md",
+  "python.section.md": "../../pkgs/development/python-modules/README.md",
+  "vim.section.md": "../../pkgs/misc/vim-plugins/README.md"
+}
