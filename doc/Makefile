@@ -1,15 +1,19 @@
 MD_TARGETS=$(addsuffix .xml, $(basename $(wildcard ./*.md ./**/*.md)))
-MD_TARGETS+=$(addsuffix .xml, $(basename $(shell \
+
+# FIXME
+REMAPPED_MD_TARGETS+=$(addsuffix .xml, $(basename $(shell \
 			cat ./languages-frameworks/file-remaps.json \
 			| jq -r 'to_entries | .[] | "./language-frameworks/" + .value' \
-			| sed -e 's:/\./:/:g' -e 's:\./language-frameworks/\.\./::g')))
-
-.PHONY: seeMDs
-seeMDs:
-	@echo ${MD_TARGETS}
+			| sed -e 's:/\./:/:g' \
+				  -e 's:\./language-frameworks/\.\./::g' \
+				  - 's:/README\. :/index\. :g')))
 
 .PHONY: all
 all: validate format out/html/index.html out/epub/manual.epub
+
+.PHONY: seeMDs
+seeMDs:
+	@echo ${REMAPPED_MD_TARGETS}
 
 .PHONY: debug
 debug:
