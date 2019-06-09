@@ -27,6 +27,7 @@ For pull requests, please rebase onto nixpkgs `master`.
 
 * [NixOS installation instructions](https://nixos.org/nixos/manual/#ch-installation)
 * [Documentation (Nix Expression Language chapter)](https://nixos.org/nix/manual/#ch-expression-language)
+* [Documentation (Using various language framework with Nix)](https://nixos.org/nixpkgs/manual/#chap-language-support)
 * [Manual (How to write packages for Nix)](https://nixos.org/nixpkgs/manual/)
 * [Manual (NixOS)](https://nixos.org/nixos/manual/)
 * [Community maintained wiki](https://nixos.wiki/)
@@ -34,6 +35,8 @@ For pull requests, please rebase onto nixpkgs `master`.
 * [Continuous package builds for 19.03 release](https://hydra.nixos.org/jobset/nixos/release-19.03)
 * [Tests for unstable/master](https://hydra.nixos.org/job/nixos/trunk-combined/tested#tabs-constituents)
 * [Tests for 19.03 release](https://hydra.nixos.org/job/nixos/release-19.03/tested#tabs-constituents)
+* Many documentation files can be found and modified within this repo under
+  `doc/` and it's subfolders.
 
 Communication:
 
