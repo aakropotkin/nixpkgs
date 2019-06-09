@@ -1,0 +1,60 @@
+TeX Live {#sec-language-texlive}
+========
+
+Since release 15.09 there is a new TeX Live packaging that lives
+entirely under attribute `texlive`.
+
+User\'s guide {#sec-language-texlive-users-guide}
+-------------
+
+-   For basic usage just pull `texlive.combined.scheme-basic` for an
+    environment with basic LaTeX support.
+
+-   It typically won\'t work to use separately installed packages
+    together. Instead, you can build a custom set of packages like this:
+```nix
+        texlive.combine {
+          inherit (texlive) scheme-small collection-langkorean algorithms cm-super;
+        }
+              
+```
+    There are all the schemes, collections and a few thousand packages,
+    as defined upstream (perhaps with tiny differences).
+
+-   By default you only get executables and files needed during runtime,
+    and a little documentation for the core packages. To change that,
+    you need to add `pkgFilter` function to `combine`.
+```nix
+        texlive.combine {
+          # inherit (texlive) whatever-you-want;
+          pkgFilter = pkg:
+            pkg.tlType == "run" || pkg.tlType == "bin" || pkg.pname == "cm-super";
+          # elem tlType [ "run" "bin" "doc" "source" ]
+          # there are also other attributes: version, name
+        }
+              
+```
+-   You can list packages e.g. by `nix repl`.
+```sh
+        $ nix repl
+        nix-repl> :l <nixpkgs>
+        nix-repl> texlive.collection-<TAB>
+```
+-   Note that the wrapper assumes that the result has a chance to be
+    useful. For example, the core executables should be present, as well
+    as some core data files. The supported way of ensuring this is by
+    including some scheme, for example `scheme-basic`, into the
+    combination.
+
+Known problems {#sec-language-texlive-known-problems}
+--------------
+
+-   Some tools are still missing, e.g. luajittex;
+
+-   some apps aren\'t packaged/tested yet (asymptote, biber, etc.);
+
+-   feature/bug: when a package is rejected by `pkgFilter`, its
+    dependencies are still propagated;
+
+-   in case of any bugs or feature requests, file a github issue or
+    better a pull request and /cc \@vcunat.
