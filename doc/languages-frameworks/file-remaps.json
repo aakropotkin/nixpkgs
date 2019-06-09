@@ -6,5 +6,16 @@
   "node.section.md": "../../pkgs/development/node-packages/README.md",
   "perl.xml": "../../pkgs/development/perl-modules/README.md",
   "python.section.md": "../../pkgs/development/python-modules/README.md",
-  "vim.section.md": "../../pkgs/misc/vim-plugins/README.md"
+  "vim.section.md": "../../pkgs/misc/vim-plugins/README.md",
+  "beam.xml": "./beam.section.md",
+  "bower.xml": "./bower.section.md",
+  "coq.xml": "./coq.section.md",
+  "go.xml": "./go.section.md",
+  "java.xml": "./java.section.md",
+  "lua.xml": "./lua.section.md",
+  "ocaml.xml": "./ocaml.section.md",
+  "qt.xml": "./qt.section.md",
+  "ruby.xml": "./ruby.section.md",
+  "texlive.xml": "./texlive.section.md",
+  "index.xml": "README.md"
 }
