@@ -2,7 +2,7 @@
 , fetchPypi
 , buildPythonPackage
 }:
-buildPythonPackage rec {
+buildPythonPackage {
 
   pname = "ez_setup";
   version = "0.9";
