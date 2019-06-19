@@ -567,6 +567,11 @@
     github = "backuitist";
     name = "Bruno Bieth";
   };
+  BadDecisionsAlex = {
+    email = "Alex.Ameen.TX@gmail.com";
+    github = "BadDecisionsAlex";
+    name = "Alex Ameen";
+  };
   badi = {
     email = "abdulwahidc@gmail.com";
     github = "badi";
@@ -1352,6 +1357,11 @@
     email = "domen@dev.si";
     github = "domenkozar";
     name = "Domen Kozar";
+  };
+  doronbehar = {
+    email = "me@doronbehar.com";
+    github = "doronbehar";
+    name = "Doron Behar";
   };
   dotlambda = {
     email = "rschuetz17@gmail.com";
@@ -2185,7 +2195,7 @@
     name = "Imuli";
   };
   infinisil = {
-    email = "infinisil@icloud.com";
+    email = "contact@infinisil.com";
     github = "infinisil";
     name = "Silvan Mosberger";
   };
@@ -3272,6 +3282,11 @@
     email = "michel@kuhlmanns.info";
     github = "michelk";
     name = "Michel Kuhlmann";
+  };
+  michojel = {
+    email = "mic.liamg@gmail.com";
+    github = "michojel";
+    name = "Michal Minář";
   };
   mickours = {
     email = "mickours@gmail.com<";
@@ -5741,5 +5756,10 @@
     email = "diego@zzamboni.org";
     github = "zzamboni";
     name = "Diego Zamboni";
+  };
+  turbomack = {
+    email = "marek.faj@gmail.com";
+    github = "turboMaCk";
+    name = "Marek Fajkus";
   };
 }
