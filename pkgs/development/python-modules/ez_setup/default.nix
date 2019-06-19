@@ -1,4 +1,4 @@
-{ lib
+{ stdenv
 , fetchPypi
 , buildPythonPackage
 }:
@@ -14,9 +14,9 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = with stdenv.lib; {
     homepage = "https://github.com/ActiveState/ez_setup";
-    license = licenses.psf;
+    license = licenses.psfl;
     description = "Yet another Python setup tool.";
   };
 
