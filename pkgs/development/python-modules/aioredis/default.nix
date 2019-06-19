@@ -8,7 +8,7 @@ buildPythonPackage rec {
   pname = "aioredis";
   version = "1.2.0";
 
-  src = fetchurl {
+  src = fetchPypi {
     inherit pname version;
     sha256 = "84d62be729beb87118cf126c20b0e3f52d7a42bb7373dc5bcdd874f26f1f251a";
   };
