@@ -1,8 +1,8 @@
-{ lib
+{ stdenv
 , fetchurl
 , buildPythonPackage
 }:
-buildPythonPackage rec {
+buildPythonPackage {
 
   pname = "hiredis-py";
   version = "1.0.0";
@@ -14,10 +14,11 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = with stdenv.lib; {
     homepage = "http://github.com/redis/hiredis-py";
     license = licenses.bsdOriginal;
     description = "Python extension that wraps protocol parsing code in hiredis. It primarily speeds up parsing of multi bulk replies.";
+    maintainers = with maintainers; [ BadDecisionsAlex ];
   };
 
 }
