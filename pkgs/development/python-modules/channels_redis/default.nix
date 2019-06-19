@@ -26,6 +26,7 @@ buildPythonPackage rec {
     homepage = "http://github.com/django/channels_redis";
     license = licenses.bsdOriginal;
     description = "A Django Channels channel layer that uses Redis as its backing store";
+    maintainers = with maintainers; [ BadDecisionsAlex ];
   };
 
 }
