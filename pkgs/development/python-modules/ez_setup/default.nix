@@ -18,6 +18,7 @@ buildPythonPackage {
     homepage = "https://github.com/ActiveState/ez_setup";
     license = licenses.psfl;
     description = "Yet another Python setup tool.";
+    maintainers = with maintainers; [ BadDecisionsAlex ];
   };
 
 }
