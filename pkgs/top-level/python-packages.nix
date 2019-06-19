@@ -2907,6 +2907,8 @@ in {
       };
     });
 
+  google-appengine = callPackage ../development/google-appengine { };
+
   google_apputils = callPackage ../development/python-modules/google_apputils { };
 
   google_auth = callPackage ../development/python-modules/google_auth { };
