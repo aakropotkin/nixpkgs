@@ -7,7 +7,7 @@ buildPythonPackage rec {
   pname = "hiredis-py";
   version = "1.0.0";
 
-  src = fetchurl {
+  src = fetchPypi {
     inherit pname version;
     sha256 = "e97c953f08729900a5e740f1760305434d62db9f281ac351108d6c4b5bf51795";
   };
