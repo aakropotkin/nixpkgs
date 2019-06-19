@@ -8970,6 +8970,8 @@ in
 
   cl-launch = callPackage ../development/tools/misc/cl-launch {};
 
+  cloud-nuke = callPackage ../development/tools/cloud-nuke { };
+
   cloudfoundry-cli = callPackage ../development/tools/cloudfoundry-cli { };
 
   coan = callPackage ../development/tools/analysis/coan { };
@@ -10143,6 +10145,8 @@ in
   cryptopp = callPackage ../development/libraries/crypto++ { };
 
   cryptominisat = callPackage ../applications/science/logic/cryptominisat { };
+
+  ctypes_sh = callPackage ../development/libraries/ctypes_sh { };
 
   curlcpp = callPackage ../development/libraries/curlcpp { };
 
@@ -13035,7 +13039,7 @@ in
 
   rlog = callPackage ../development/libraries/rlog { };
 
-  rocksdb = callPackage ../development/libraries/rocksdb { jemalloc = jemalloc450; };
+  rocksdb = callPackage ../development/libraries/rocksdb { };
 
   rocksdb_lite = rocksdb.override { enableLite = true; };
 
@@ -17246,6 +17250,8 @@ in
 
   cubicsdr = callPackage ../applications/radio/cubicsdr { wxGTK = wxGTK31; };
 
+  cum = callPackage ../applications/misc/cum { };
+
   cuneiform = callPackage ../tools/graphics/cuneiform {};
 
   curseradio = callPackage ../applications/audio/curseradio { };
@@ -18898,8 +18904,7 @@ in
   };
 
   luakit = callPackage ../applications/networking/browsers/luakit {
-    inherit (lua51Packages) luafilesystem;
-    lua5 = lua5_1;
+    inherit (luajitPackages) luafilesystem;
   };
 
   looking-glass-client = callPackage ../applications/virtualization/looking-glass-client { };
@@ -21657,7 +21662,7 @@ in
   mrrescue = callPackage ../games/mrrescue { };
 
   mudlet = libsForQt5.callPackage ../games/mudlet {
-    inherit (lua51Packages) luafilesystem lrexlib luazip luasqlite3;
+    inherit (lua51Packages) luafilesystem lrexlib-pcre luazip luasql-sqlite3;
   };
 
   n2048 = callPackage ../games/n2048 {};

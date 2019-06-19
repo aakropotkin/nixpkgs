@@ -4278,6 +4278,8 @@ in {
 
   redis = callPackage ../development/python-modules/redis { };
 
+  redis-py = callPackages ../development/python-modules/redis-py { };
+
   rednose = callPackage ../development/python-modules/rednose { };
 
   reikna = callPackage ../development/python-modules/reikna { };
