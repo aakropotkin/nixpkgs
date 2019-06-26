@@ -19,6 +19,8 @@ buildPythonPackage rec {
     openapi-codec
     simplejson
   ];
+
+  doCheck = false;
   
   meta = with stdenv.lib; {
     homepage = "https://github.com/marcgibbons/django-rest-swagger";
