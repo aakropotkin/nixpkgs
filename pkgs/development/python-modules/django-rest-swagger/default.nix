@@ -1,7 +1,7 @@
 { stdenv
 , fetchPypi, fetchpatch
 , buildPythonPackage
-, django, djangorestframework
+, django, djangorestframework, openapi-codec, simplejson
 }:
 buildPythonPackage rec {
 
