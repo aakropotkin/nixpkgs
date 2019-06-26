@@ -17,6 +17,8 @@ buildPythonPackage rec {
     jinja2
   ];
 
+  doCheck = false;
+
   meta = with stdenv.lib; {
     homepage = "https://github.com/core-api/python-coreschema";
     license = licenses.bsdOriginal;
