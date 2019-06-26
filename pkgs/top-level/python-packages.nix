@@ -2547,6 +2547,16 @@ in {
 
   django-crispy-forms = callPackage ../development/python-modules/django-crispy-forms { };
 
+  django-rest-swagger = callPackage ../development/python-modules/django-rest-swagger { };
+
+  coreapi = callPackage ../development/python-modules/coreapi { };
+
+  coreschema = callPackage ../development/python-modules/coreschema { };
+
+  itypes = callPackage ../development/python-modules/itypes { };
+
+  openapi-codec = callPackage ../development/python-modules/openapi-codec { };
+
   django-discover-runner = callPackage ../development/python-modules/django-discover-runner { };
 
   django_environ = callPackage ../development/python-modules/django_environ { };
