@@ -1,12 +1,14 @@
 { stdenv
 , fetchPypi, fetchpatch
-, buildPythonPackage
+, buildPythonPackage, pythonOlder
 , django, python, django-crispy-forms, mock, djangorestframework
 }:
 buildPythonPackage rec {
 
   pname = "django-filter";
   version = "2.1.0";
+
+  disabled = pythonOlder "3.4";
 
   src = fetchPypi {
     inherit pname version;

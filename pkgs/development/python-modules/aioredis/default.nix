@@ -18,6 +18,9 @@ buildPythonPackage rec {
     async-timeout
   ];
 
+  # Tests rely on the presence of a redis server.
+  doCheck = false;
+
   meta = with stdenv.lib; {
     homepage = "http://github.com/django/channels_redis";
     license = licenses.mit;
