@@ -12,6 +12,8 @@ buildPythonPackage rec {
     sha256 = "5952bab971110d0b86c278132dae0aa095beee8f723e625c3d3fa28888f1675f";
   };
 
+  # Checks are designed to be run by module's authors not users. Requires
+  # extensive setup of django server.
   doCheck = false;
 
   meta = with stdenv.lib; {

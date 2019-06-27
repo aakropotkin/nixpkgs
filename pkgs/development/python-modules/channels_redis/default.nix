@@ -1,17 +1,20 @@
 { stdenv
-, fetchPypi
+, fetchFromGitHub
 , buildPythonPackage
-, redis, msgpack, channels, aioredis
+, redis, msgpack, channels, aioredis, async_generator, pytest
 }:
 buildPythonPackage rec {
 
   pname = "channels_redis";
   version = "2.4.0";
 
-  src = fetchPypi {
-    inherit pname version;
-    sha256 = "b7ccbcb2fd4e568c08c147891b26db59aa25d88b65af826ce7f70c815cfb91bc";
+  src = fetchFromGitHub {
+    owner = "django";
+    repo = pname;
+    rev = version;
+    sha256 = "05niaqjv790mnrvca26kbnvb50fgnk2zh0k4np60cn6ilp4nl0kc";
   };
+
 
   propagatedBuildInputs = [
     redis
@@ -20,7 +23,13 @@ buildPythonPackage rec {
     channels
   ];
 
-  doCheck = false;
+  checkInputs = [ pytest async_generator ];
+  checkPhase = ''
+    # Ensure tests are running against installed packages.
+    mv channels_redis channels_redis.hidden
+    # test_double_receive expects a redis server running.
+    pytest tests/ -k "not test_double_receive"
+  '';
 
   meta = with stdenv.lib; {
     homepage = "http://github.com/django/channels_redis";

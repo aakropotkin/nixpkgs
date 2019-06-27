@@ -486,6 +486,8 @@ in {
 
   histbook = callPackage ../development/python-modules/histbook { };
 
+  hiredis = callPackage ../development/python-modules/hiredis { };
+
   hdmedians = callPackage ../development/python-modules/hdmedians { };
 
   holoviews = callPackage ../development/python-modules/holoviews { };
@@ -2548,6 +2550,18 @@ in {
   django-cors-headers = callPackage ../development/python-modules/django-cors-headers { };
   
   django-crispy-forms = callPackage ../development/python-modules/django-crispy-forms { };
+
+  django-crispy-forms = callPackage ../development/python-modules/django-crispy-forms { };
+
+  django-rest-swagger = callPackage ../development/python-modules/django-rest-swagger { };
+
+  coreapi = callPackage ../development/python-modules/coreapi { };
+
+  coreschema = callPackage ../development/python-modules/coreschema { };
+
+  itypes = callPackage ../development/python-modules/itypes { };
+
+  openapi-codec = callPackage ../development/python-modules/openapi-codec { };
 
   django-discover-runner = callPackage ../development/python-modules/django-discover-runner { };
 
