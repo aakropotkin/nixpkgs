@@ -2551,8 +2551,6 @@ in {
   
   django-crispy-forms = callPackage ../development/python-modules/django-crispy-forms { };
 
-  django-crispy-forms = callPackage ../development/python-modules/django-crispy-forms { };
-
   django-rest-swagger = callPackage ../development/python-modules/django-rest-swagger { };
 
   coreapi = callPackage ../development/python-modules/coreapi { };
