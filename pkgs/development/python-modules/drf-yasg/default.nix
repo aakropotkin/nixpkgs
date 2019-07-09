@@ -13,7 +13,7 @@ buildPythonPackage rec {
     sha256 = "82b535a22fc13e0a202217df4c6470c40b54d21f742e69798f53c69afccbfdac";
   };
 
-  doCheck = false;
+  #doCheck = false;
 
   propagatedBuildInputs = [
     django
