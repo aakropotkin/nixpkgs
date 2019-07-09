@@ -1941,6 +1941,8 @@ in {
 
   dropbox = callPackage ../development/python-modules/dropbox {};
 
+  drf-yasg = callPackage ../development/python-modules/drf-yasg {};
+
   ds4drv = callPackage ../development/python-modules/ds4drv {
     inherit (pkgs) fetchFromGitHub bluez;
   };

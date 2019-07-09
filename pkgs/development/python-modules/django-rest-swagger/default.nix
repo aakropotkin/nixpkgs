@@ -21,7 +21,7 @@ buildPythonPackage rec {
   ];
 
   doCheck = false;
-  
+
   meta = with stdenv.lib; {
     homepage = "https://github.com/marcgibbons/django-rest-swagger";
     license = licenses.bsdOriginal;
