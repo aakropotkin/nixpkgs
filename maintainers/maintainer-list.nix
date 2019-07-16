@@ -686,6 +686,11 @@
     github = "bergey";
     name = "Daniel Bergey";
   };
+  betaboon = {
+    email = "betaboon@0x80.ninja";
+    github = "betaboon";
+    name = "betaboon";
+  };
   bfortz = {
     email = "bernard.fortz@gmail.com";
     github = "bfortz";
@@ -1570,6 +1575,11 @@
     github = "endgame";
     name = "Jack Kelly";
   };
+  enorris = {
+      name = "Eric Norris";
+      email = "erictnorris@gmail.com";
+      github = "ericnorris";
+  };
   enzime = {
     email = "enzime@users.noreply.github.com";
     github = "enzime";
@@ -1945,6 +1955,11 @@
     github = "glenns";
     name = "Glenn Searby";
   };
+  gloaming = {
+    email = "ch9871@gmail.com";
+    github = "gloaming";
+    name = "Craig Hall";
+  };
   globin = {
     email = "mail@glob.in";
     github = "globin";
@@ -2217,6 +2232,15 @@
   ivan-tkatchev = {
     email = "tkatchev@gmail.com";
     name = "Ivan Tkatchev";
+  };
+  ivanbrennan = {
+    email = "ivan.brennan@gmail.com";
+    github = "ivanbrennan";
+    name = "Ivan Brennan";
+    keys = [{
+      longkeyid = "rsa4096/0x79C3C47DC652EA54";
+      fingerprint = "7311 2700 AB4F 4CDF C68C  F6A5 79C3 C47D C652 EA54";
+    }];
   };
   ivegotasthma = {
     email = "ivegotasthma@protonmail.com";
@@ -2495,6 +2519,11 @@
     github = "jonringer";
     name = "Jonathan Ringer";
   };
+  jorise = {
+    email = "info@jorisengbers.nl";
+    github = "JorisE";
+    name = "Joris Engbers";
+  };
   jorsn = {
     name = "Johannes Rosenberger";
     email = "johannes@jorsn.eu";
@@ -2617,6 +2646,11 @@
     email = "kierdavis@gmail.com";
     github = "kierdavis";
     name = "Kier Davis";
+  };
+  killercup = {
+    email = "killercup@gmail.com";
+    github = "killercup";
+    name = "Pascal Hertleif";
   };
   kiloreux = {
     email = "kiloreux@gmail.com";
@@ -2757,6 +2791,11 @@
     email = "lasandell@gmail.com";
     github = "lasandell";
     name = "Luke Sandell";
+  };
+  lambda-11235 = {
+    email = "taranlynn0@gmail.com";
+    github = "lambda-11235";
+    name = "Taran Lynn";
   };
   lassulus = {
     email = "lassulus@gmail.com";
@@ -3442,6 +3481,11 @@
     github = "mpickering";
     name = "Matthew Pickering";
   };
+  mpoquet = {
+    email = "millian.poquet@gmail.com";
+    github = "mpoquet";
+    name = "Millian Poquet";
+  };
   mpscholten = {
     email = "marc@mpscholten.de";
     github = "mpscholten";
@@ -3461,6 +3505,11 @@
     email = "markkarpov92@gmail.com";
     github = "mrkkrp";
     name = "Mark Karpov";
+  };
+  mrmebelman = {
+    email = "burzakovskij@protonmail.com";
+    github = "MrMebelMan";
+    name = "Vladyslav Burzakovskyy";
   };
   mrVanDalo = {
     email = "contact@ingolf-wagner.de";
@@ -3563,6 +3612,11 @@
     email = "nathan@nathan.gs";
     github = "nathan-gs";
     name = "Nathan Bijnens";
+  };
+  nathyong = {
+    email = "nathyong@noreply.github.com";
+    github = "nathyong";
+    name = "Nathan Yong";
   };
   nckx = {
     email = "github@tobias.gr";
@@ -4044,6 +4098,16 @@
     email = "pradeep.chhetri89@gmail.com";
     github = "pradeepchhetri";
     name = "Pradeep Chhetri";
+  };
+  pradyuman = {
+    email = "me@pradyuman.co";
+    github = "pradyuman";
+    name = "Pradyuman Vig";
+    keys = [
+      { longkeyid = "rsa4096/4F74D5361C4CA31E";
+        fingerprint = "240B 57DE 4271 2480 7CE3  EAC8 4F74 D536 1C4C A31E";
+      }
+    ];
   };
   prikhi = {
     email = "pavan.rikhi@gmail.com";
@@ -4691,6 +4755,11 @@
     github = "sigma";
     name = "Yann Hodique";
   };
+  sikmir = {
+    email = "sikmir@gmail.com";
+    github = "sikmir";
+    name = "Nikolay Korotkiy";
+  };
   simonvandel = {
     email = "simon.vandel@gmail.com";
     github = "simonvandel";
@@ -4845,6 +4914,11 @@
     email = "severen@shrike.me";
     github = "severen";
     name = "Severen Redwood";
+  };
+  steell = {
+    email = "steve@steellworks.com";
+    github = "Steell";
+    name = "Steve Elliott";
   };
   stephenmw = {
     email = "stephen@q5comm.com";
@@ -5475,6 +5549,11 @@
     email = "victor@sene.ovh";
     github = "vskilet";
     name = "Victor SENE";
+  };
+  vyorkin = {
+    email = "vasiliy.yorkin@gmail.com";
+    github = "vyorkin";
+    name = "Vasiliy Yorkin";
   };
   vyp = {
     email = "elisp.vim@gmail.com";
