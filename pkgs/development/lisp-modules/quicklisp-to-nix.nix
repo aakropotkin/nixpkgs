@@ -47,6 +47,28 @@ let quicklisp-to-nix-packages = rec {
        }));
 
 
+  "terminfo" = buildLispPackage
+    ((f: x: (x // (f x)))
+       (qlOverrides."terminfo" or (x: {}))
+       (import ./quicklisp-to-nix-output/terminfo.nix {
+         inherit fetchurl;
+       }));
+
+
+  "osicat" = buildLispPackage
+    ((f: x: (x // (f x)))
+       (qlOverrides."osicat" or (x: {}))
+       (import ./quicklisp-to-nix-output/osicat.nix {
+         inherit fetchurl;
+           "alexandria" = quicklisp-to-nix-packages."alexandria";
+           "babel" = quicklisp-to-nix-packages."babel";
+           "cffi" = quicklisp-to-nix-packages."cffi";
+           "cffi-grovel" = quicklisp-to-nix-packages."cffi-grovel";
+           "cffi-toolchain" = quicklisp-to-nix-packages."cffi-toolchain";
+           "trivial-features" = quicklisp-to-nix-packages."trivial-features";
+       }));
+
+
   "rt" = buildLispPackage
     ((f: x: (x // (f x)))
        (qlOverrides."rt" or (x: {}))
@@ -1321,6 +1343,22 @@ let quicklisp-to-nix-packages = rec {
        (import ./quicklisp-to-nix-output/lisp-namespace.nix {
          inherit fetchurl;
            "alexandria" = quicklisp-to-nix-packages."alexandria";
+       }));
+
+
+  "linedit" = buildLispPackage
+    ((f: x: (x // (f x)))
+       (qlOverrides."linedit" or (x: {}))
+       (import ./quicklisp-to-nix-output/linedit.nix {
+         inherit fetchurl;
+           "alexandria" = quicklisp-to-nix-packages."alexandria";
+           "babel" = quicklisp-to-nix-packages."babel";
+           "cffi" = quicklisp-to-nix-packages."cffi";
+           "cffi-grovel" = quicklisp-to-nix-packages."cffi-grovel";
+           "cffi-toolchain" = quicklisp-to-nix-packages."cffi-toolchain";
+           "osicat" = quicklisp-to-nix-packages."osicat";
+           "terminfo" = quicklisp-to-nix-packages."terminfo";
+           "trivial-features" = quicklisp-to-nix-packages."trivial-features";
        }));
 
 

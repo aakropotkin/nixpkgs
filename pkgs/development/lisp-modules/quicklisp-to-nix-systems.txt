@@ -93,6 +93,7 @@ iterate
 lack
 let-plus
 lev
+linedit
 lisp-namespace
 local-time
 lfarm-client
