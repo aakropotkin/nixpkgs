@@ -123,6 +123,7 @@ mapAliases ({
   go-pup = pup; # added 2017-12-19
   gobjectIntrospection = gobject-introspection; # added 2018-12-02
   goimports = gotools; # added 2018-09-16
+  google-gflags = gflags; # added 2019-07-25
   googleAuthenticator = google-authenticator; # added 2016-10-16
   grantlee5 = libsForQt5.grantlee;  # added 2015-12-19
   gsettings_desktop_schemas = gsettings-desktop-schemas; # added 2018-02-25
@@ -377,8 +378,6 @@ mapAliases ({
   xf86_video_nouveau = xorg.xf86videonouveau; # added 2015-09
   xlibs = xorg; # added 2015-09
   xpraGtk3 = xpra; # added 2018-09-13
-  yarn2nix = throw "Use upstream https://github.com/moretea/yarn2nix"; # added 2019-04-12
-  mkYarnPackage = yarn2nix; # added 2019-04-12
   youtubeDL = youtube-dl;  # added 2014-10-26
   zdfmediathk = mediathekview; # added 2019-01-19
 
