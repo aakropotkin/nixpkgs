@@ -393,6 +393,11 @@
     github = "aneeshusa";
     name = "Aneesh Agrawal";
   };
+  angristan = {
+    email = "angristan@pm.me";
+    github = "angristan";
+    name = "Stanislas Lange";
+  };
   ankhers = {
     email = "justin.k.wood@gmail.com";
     github = "ankhers";
@@ -2160,6 +2165,11 @@
     email = "hlolli@gmail.com";
     github = "hlolli";
     name = "Hlodver Sigurdsson";
+  };
+  hugoreeves = {
+    email = "hugolreeves@gmail.com";
+    github = "hugoreeves";
+    name = "Hugo Reeves";
   };
   hodapp = {
     email = "hodapp87@gmail.com";
@@ -4214,9 +4224,13 @@
     name = "Ben Hamlin";
   };
   prusnak = {
-    email = "stick@gk2.sk";
+    email = "pavol@rusnak.io";
     github = "prusnak";
     name = "Pavol Rusnak";
+    keys = [{
+      longkeyid = "rsa4096/0x91F3B339B9A02A3D";
+      fingerprint = "86E6 792F C27B FD47 8860  C110 91F3 B339 B9A0 2A3D";
+    }];
   };
   pshendry = {
     email = "paul@pshendry.com";

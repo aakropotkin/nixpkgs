@@ -12,6 +12,8 @@ let
 
     buildOcaml = callPackage ../build-support/ocaml { };
 
+    buildOasisPackage = callPackage ../build-support/ocaml/oasis.nix { };
+
     buildDunePackage = callPackage ../build-support/ocaml/dune.nix {};
 
     alcotest = callPackage ../development/ocaml-modules/alcotest {};
@@ -376,6 +378,8 @@ let
 
     lacaml = callPackage ../development/ocaml-modules/lacaml { };
 
+    lambdasoup = callPackage ../development/ocaml-modules/lambdasoup { };
+
     lambdaTerm-1_6 = callPackage ../development/ocaml-modules/lambda-term/1.6.nix { lwt = lwt2; };
     lambdaTerm =
       if lib.versionOlder "4.02" ocaml.version
@@ -436,9 +440,11 @@ let
 
     merlin = callPackage ../development/tools/ocaml/merlin { };
 
-    merlin_extend = callPackage ../development/ocaml-modules/merlin_extend { };
+    merlin-extend = callPackage ../development/ocaml-modules/merlin-extend { };
 
     mezzo = callPackage ../development/compilers/mezzo { };
+
+    minisat = callPackage ../development/ocaml-modules/minisat { };
 
     mlgmp =  callPackage ../development/ocaml-modules/mlgmp { };
 
@@ -512,6 +518,8 @@ let
     ocaml_pcre = callPackage ../development/ocaml-modules/pcre {};
 
     pgocaml = callPackage ../development/ocaml-modules/pgocaml {};
+
+    ocaml-sat-solvers = callPackage ../development/ocaml-modules/ocaml-sat-solvers { };
 
     ocamlscript = callPackage ../development/tools/ocaml/ocamlscript { };
 
@@ -590,6 +598,10 @@ let
     resource-pooling = callPackage ../development/ocaml-modules/resource-pooling { };
 
     result = callPackage ../development/ocaml-modules/ocaml-result { };
+
+    secp256k1 = callPackage ../development/ocaml-modules/secp256k1 {
+      inherit (pkgs) secp256k1;
+    };
 
     seq = callPackage ../development/ocaml-modules/seq { };
 
@@ -718,6 +730,8 @@ let
     stog = callPackage ../applications/misc/stog { };
 
     stringext = callPackage ../development/ocaml-modules/stringext { };
+
+    tcslib = callPackage ../development/ocaml-modules/tcslib { };
 
     toml = callPackage ../development/ocaml-modules/toml { };
 
