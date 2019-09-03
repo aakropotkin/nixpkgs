@@ -87,9 +87,11 @@ mapAliases ({
   double_conversion = double-conversion; # 2017-11-22
   docker_compose = docker-compose; # 2018-11-10
   dwarf_fortress = dwarf-fortress; # added 2016-01-23
-  emacsMelpa = emacs25PackagesNg; # for backward compatibility
+  emacsMelpa = emacs25Packages; # for backward compatibility
   emacsPackagesGen = emacsPackagesFor; # added 2018-08-18
-  emacsPackagesNgGen = emacsPackagesNgFor; # added 2018-08-18
+  emacsPackagesNgGen = emacsPackagesFor; # added 2018-08-18
+  emacsPackagesNgFor = emacsPackagesFor; # added 2019-08-07
+  emacsPackagesNg = emacsPackages; # added 2019-08-07
   emby = throw "The Emby derivation has been removed, see jellyfin instead for a free software fork."; # added 2019-05-01
   enblendenfuse = enblend-enfuse; # 2015-09-30
   evolution_data_server = evolution-data-server; # added 2018-02-25
@@ -111,6 +113,7 @@ mapAliases ({
   gettextWithExpat = gettext; # 2016-02-19
   git-hub = gitAndTools.git-hub; # added 2016-04-29
   glib_networking = glib-networking; # added 2018-02-25
+  gnome-mpv = celluloid; # added 2019-08-22
   gnome-themes-standard = gnome-themes-extra; # added 2018-03-14
   gnome_doc_utils = gnome-doc-utils; # added 2018-02-25
   gnome_themes_standard = gnome-themes-standard; # added 2018-02-25
@@ -145,10 +148,14 @@ mapAliases ({
   gupnptools = gupnp-tools;  # added 2015-12-19
   gutenberg = zola;  # added 2018-11-17
   heimdalFull = heimdal; # added 2018-05-01
+  hepmc = hepmc2; # added 2019-08-05
   hicolor_icon_theme = hicolor-icon-theme; # added 2018-02-25
   htmlTidy = html-tidy;  # added 2014-12-06
   iana_etc = iana-etc;  # added 2017-03-08
+  icedtea8_web = adoptopenjdk-icedtea-web; # added 2019-08-21
+  icedtea_web = adoptopenjdk-icedtea-web; # added 2019-08-21
   idea = jetbrains; # added 2017-04-03
+  infiniband-diags = rdma-core; # added 2019-08-09
   inotifyTools = inotify-tools;
   jbuilder = dune; # added 2018-09-09
   joseki = apache-jena-fuseki; # added 2016-02-28
@@ -230,6 +237,7 @@ mapAliases ({
   nmap_graphical = nmap-graphical;  # added 2017-01-19
   nologin = shadow; # added 2018-04-25
   nxproxy = nx-libs; # added 2019-02-15
+  nylas-mail-bin = throw "deprecated in 2019-09-11: abandoned by upstream";
   opencascade_oce = opencascade; # added 2018-04-25
   opencl-icd = ocl-icd; # added 2017-01-20
   openexr_ctl = ctl; # added 2018-04-25
@@ -277,7 +285,9 @@ mapAliases ({
   postgis = postgresqlPackages.postgis;
   # end
   ppl-address-book = throw "deprecated in 2019-05-02: abandoned by upstream.";
+  processing3 = processing; # added 2019-08-16
   procps-ng = procps; # added 2018-06-08
+  pyo3-pack = maturin;
   pulseaudioLight = pulseaudio; # added 2018-04-25
   qca-qt5 = libsForQt5.qca-qt5;  # added 2015-12-19
   qt_gstreamer = qt-gstreamer;  # added 2017-02
@@ -327,6 +337,7 @@ mapAliases ({
   spice_protocol = spice-protocol; # added 2018-02-25
   sqlite3_analyzer = sqlite-analyzer; # added 2018-05-22
   sqliteInteractive = sqlite-interactive;  # added 2014-12-06
+  squid4 = squid;  # added 2019-08-22
   sshfsFuse = sshfs-fuse; # added 2016-09
   suil-qt5 = suil; # added 2018-05-01
   surf-webkit2 = surf; # added 2017-04-02

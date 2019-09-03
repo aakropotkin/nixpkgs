@@ -612,6 +612,8 @@ let quicklisp-to-nix-packages = rec {
        (qlOverrides."lack-util" or (x: {}))
        (import ./quicklisp-to-nix-output/lack-util.nix {
          inherit fetchurl;
+           "alexandria" = quicklisp-to-nix-packages."alexandria";
+           "bordeaux-threads" = quicklisp-to-nix-packages."bordeaux-threads";
            "ironclad" = quicklisp-to-nix-packages."ironclad";
            "nibbles" = quicklisp-to-nix-packages."nibbles";
        }));
@@ -1390,6 +1392,8 @@ let quicklisp-to-nix-packages = rec {
        (qlOverrides."lack" or (x: {}))
        (import ./quicklisp-to-nix-output/lack.nix {
          inherit fetchurl;
+           "alexandria" = quicklisp-to-nix-packages."alexandria";
+           "bordeaux-threads" = quicklisp-to-nix-packages."bordeaux-threads";
            "ironclad" = quicklisp-to-nix-packages."ironclad";
            "lack-component" = quicklisp-to-nix-packages."lack-component";
            "lack-util" = quicklisp-to-nix-packages."lack-util";
@@ -1410,6 +1414,8 @@ let quicklisp-to-nix-packages = rec {
        (qlOverrides."ironclad" or (x: {}))
        (import ./quicklisp-to-nix-output/ironclad.nix {
          inherit fetchurl;
+           "alexandria" = quicklisp-to-nix-packages."alexandria";
+           "bordeaux-threads" = quicklisp-to-nix-packages."bordeaux-threads";
            "nibbles" = quicklisp-to-nix-packages."nibbles";
            "rt" = quicklisp-to-nix-packages."rt";
        }));
@@ -1721,6 +1727,7 @@ let quicklisp-to-nix-packages = rec {
            "split-sequence" = quicklisp-to-nix-packages."split-sequence";
            "sqlite" = quicklisp-to-nix-packages."sqlite";
            "trivial-features" = quicklisp-to-nix-packages."trivial-features";
+           "trivial-garbage" = quicklisp-to-nix-packages."trivial-garbage";
            "trivial-types" = quicklisp-to-nix-packages."trivial-types";
            "uiop" = quicklisp-to-nix-packages."uiop";
        }));
