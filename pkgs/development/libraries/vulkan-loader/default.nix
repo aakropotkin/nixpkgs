@@ -5,11 +5,12 @@ let
   version = "1.1.106";
 in
 
-assert (builtins.trace ''
+assert version == vulkan-headers.version;
+
+(builtins.trace ''
   Version:         ${version}
   Headers Version: ${vulkan-headers.version}
 '')
-  version == vulkan-headers.version;
 
 stdenv.mkDerivation rec {
   name = "vulkan-loader-${version}";
