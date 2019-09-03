@@ -7,6 +7,11 @@ in
 
 assert version == vulkan-headers.version;
 
+(builtins.trace ''
+  Version:         ${version}
+  Headers Version: ${vulkan-headers.version}
+'')
+
 stdenv.mkDerivation rec {
   name = "vulkan-loader-${version}";
   inherit version;
