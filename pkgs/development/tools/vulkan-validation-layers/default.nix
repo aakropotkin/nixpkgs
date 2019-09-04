@@ -5,7 +5,7 @@
 stdenv.mkDerivation rec {
   pname = "vulkan-validation-layers";
   #version = "1.1.114.0";
-  version = "1.1.106";
+  version = "1.1.106.0";
 
   src = fetchFromGitHub {
     owner = "KhronosGroup";
