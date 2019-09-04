@@ -2,7 +2,8 @@
 , xlibsWrapper, libxcb, libXrandr, libXext, wayland, addOpenGLRunpath }:
 
 let
-  version = "1.1.114.0";
+  #version = "1.1.114.0";
+  version = "1.1.106.0";
 in
 
 assert version == vulkan-headers.version;
