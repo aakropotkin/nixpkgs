@@ -84,6 +84,7 @@
 , "meguca"
 , "mocha"
 , "multi-file-swagger"
+, "nativefier"
 , "neovim"
 , "nijs"
 , "node-gyp"
