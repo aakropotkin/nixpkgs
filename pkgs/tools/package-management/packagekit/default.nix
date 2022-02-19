@@ -27,8 +27,12 @@
 , enableSystemd ? stdenv.isLinux
 , systemd
 }:
+let
+  nix_version = lib.removeSuffix nix.VERSION_SUFFIX nix.version;
+  useNlohmann = lib.versionAtLeast "2.7" nix_version;
+in
 
-assert (lib.versionAtLeast "2.7" nix.version) -> nlohmann_json != null;
+assert useNlohmann -> nlohmann_json != null;
 
 stdenv.mkDerivation rec {
   pname = "packagekit";
@@ -53,9 +57,9 @@ stdenv.mkDerivation rec {
     gtk3
     sqlite
     nix
-    nlohmann_json
     boost
   ] ++ lib.optional enableSystemd systemd
+  ++ lib.optional useNlohmann nlohmann_json
   ++ lib.optional enableBashCompletion bash-completion;
   nativeBuildInputs = [
     vala
